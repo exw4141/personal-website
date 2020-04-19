@@ -1,9 +1,57 @@
 {% extends 'base.html' %}
 
 {% block title %}Edward Wong{% endblock %}
+{% block stylesheets %}
+<link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='css/home.css') }}" />
+{% endblock %}
 
 {% block body %}
 <body>
-    <h1>Welcome!</h1>
+    <h1 id="heading">Edward Wong</h1>
+
+    <div id="content">
+        <img id="me" src="{{ url_for('static', filename='images/me.jpeg') }}" />
+
+        <div id="description">
+            <p>
+                Hi, welcome to my website! I am a 5th year Software Engineering major from Rochester Institute of 
+                Technology. My coursework, co-ops, and personal learning have given me the opportunity to work with many 
+                fields of computing. These include back-end development, web development and databases. Here is a list of 
+                technologies that I have experience with:
+            </p>
+    
+            <ul id="tech-list">
+                <li>
+                    Back-end development <br />
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C#</li>
+                        <li>C</li>
+                        <li>Ruby</li>
+                    </ul>
+                </li>
+                <li>
+                    Web development
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>PHP</li>
+                        <li>Node.js</li>
+                        <li>Flask</li>
+                    </ul>
+                </li>
+                <li>
+                    Databases
+                    <ul>
+                        <li>SQL</li>
+                        <li>RDBMS (MySQL, PostgreSQL, SQLite)</li>
+                        <li>Firebase</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
 {% endblock %}
