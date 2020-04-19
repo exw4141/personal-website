@@ -7,6 +7,6 @@ def home():
     return render_template('home.html')
 
 
-@app.route('/project')
+@app.route('/projects')
 def project():
-    return render_template('')
+    return render_template('projects.html')
