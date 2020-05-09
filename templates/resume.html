@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Resume{% endblock %}
+{% block stylesheets %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/resume.css') }}" />
+{% endblock %}
+
+{% block body %}
+    <div id="resume-download-container">
+        <a id="resume-download" href="{{ url_for('static', filename='wong_resume.pdf') }}" download>Download resume</a>
+    </div>
+    <object id="resume" type="application/pdf" data="{{ url_for('static', filename='wong_resume.pdf') }}">
+        The browser you are using is outdated and is unable to display PDF files. Please view this page on a 
+        more recent browser.
+    </object>
+{% endblock %}

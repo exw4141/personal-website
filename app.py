@@ -52,3 +52,7 @@ def project():
         }
     ]
     return render_template('projects.html', projects=projects)
+
+@app.route('/resume')
+def resume():
+    return render_template('resume.html')
