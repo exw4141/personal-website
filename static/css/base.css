@@ -10,6 +10,18 @@ body {
     margin-block-end: 0.33em;
 }
 
+#icon-container {
+    text-align: center;
+}
+
+#github-logo {
+    margin-right: 5px;
+}
+
+#linkedin-logo {
+    margin-left: 5px;
+}
+
 #nav {
     background-color: rgb(226, 226, 226);
     text-align: center;

@@ -14,7 +14,13 @@
     </head>
 
     <body>
-        <h1 id="heading">Edward Wong</h1>
+        <header>
+            <h1 id="heading">Edward Wong</h1>
+            <div id="icon-container">
+                <a href="https://github.com/exw4141" target="_blank"><img id="github-logo" src="{{ url_for('static', filename='icons/github.png') }}" alt="GitHub" title="GitHub" height="24px" /></a>
+                <a href="https://www.linkedin.com/in/exw4141/" target="_blank"><img id="linkedin-logo" src="{{ url_for('static', filename='icons/linkedin.png') }}" alt="LinkedIn" title="LinkedIn" height="24px" /></a>
+            </div>
+        </header>
 
         <ul id="nav">
             <li><a href="/">Home</a></li>
