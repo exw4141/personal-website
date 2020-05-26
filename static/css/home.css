@@ -7,18 +7,40 @@
 
 #me {
     display: inline-block;
-    width: 30%;
+    width: 35%;
+    max-width: none;
     margin: 1em;
 }
 
 #description {
     display: inline-block;
-    width: 64%;
+    width: 59%;
     margin: 1em 0;
     vertical-align: top;
+}
+
+#description p {
+    margin-block-start: 0;
 }
 
 #tech-list {
     list-style-type: none;
     padding-inline-start: 20px;
+}
+
+@media screen and (max-width: 950px) {
+    #content {
+        padding: 1em;
+    }
+
+    #me {
+        display: block;
+        margin: auto;
+        min-width: 55%;
+    }
+
+    #description {
+        display: block;
+        width: 100%;
+    }
 }
