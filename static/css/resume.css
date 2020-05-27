@@ -20,3 +20,9 @@
     width: 80%;
     height: 1170px;
 }
+
+@media screen and (max-width: 380px) {
+    #resume {
+        display: none;
+    }
+}
