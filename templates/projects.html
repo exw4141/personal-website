@@ -13,28 +13,30 @@
 {% endblock %}
 
 {% block body %}
-    <div id="projects" class="preload" onload="removePreload()">
-        {% for project in projects %}
-            <div id="project-{{ loop.index0 + 1 }}" class="project">
-                <div class="image-container">
-                    <img class="project-image" src="{{ url_for('static', filename=project.imagePath) }}" />
-                    <div class="description-container">
-                        <div class="project-description">
-                            {{ project.description }} <br />
-                            Tools: {{ project.tools }} <br />
-
-                            {% if project.github != "" %}
-                            <a class="project-link" href="{{ project.github }}" target="_blank">GitHub Repository</a> <br />
-                            {% endif %}
-                            
-                            {% if project.link != "" %}
-                            <a class="project-link" href="{{ project.link }}" target="_blank">Website URL</a>
-                            {% endif %}
+    <div id="grid-container">
+        <div id="projects" class="preload" onload="removePreload()">
+            {% for project in projects %}
+                <div id="project-{{ loop.index0 + 1 }}" class="project">
+                    <div class="image-container">
+                        <img class="project-image" src="{{ url_for('static', filename=project.imagePath) }}" />
+                        <div class="description-container">
+                            <div class="project-description">
+                                {{ project.description }} <br />
+                                Tools: {{ project.tools }} <br />
+    
+                                {% if project.github != "" %}
+                                <a class="project-link" href="{{ project.github }}" target="_blank">GitHub Repository</a> <br />
+                                {% endif %}
+                                
+                                {% if project.link != "" %}
+                                <a class="project-link" href="{{ project.link }}" target="_blank">Website URL</a>
+                                {% endif %}
+                            </div>
                         </div>
                     </div>
+                    <p class="project-name">{{ project.name }}</p>
                 </div>
-                <p class="project-name">{{ project.name }}</p>
-            </div>
-        {% endfor %}
+            {% endfor %}
+        </div>
     </div>
 {% endblock %}
