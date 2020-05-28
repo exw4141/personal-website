@@ -41,6 +41,7 @@
 }
 
 .project-info {
+    opacity: 1;
     color: white;
     position: absolute;
     width: 80%;
