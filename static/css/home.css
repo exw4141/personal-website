@@ -43,4 +43,8 @@
         display: block;
         width: 100%;
     }
+
+    #tech-list {
+        padding-inline-start: 10px;
+    }
 }
