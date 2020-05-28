@@ -40,8 +40,11 @@
     opacity: 0.7;
 }
 
-.project-info {
+.info-container:hover .project-info {
     opacity: 1;
+}
+
+.project-info {
     color: white;
     position: absolute;
     width: 80%;
