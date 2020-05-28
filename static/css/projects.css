@@ -80,6 +80,6 @@
 @media screen and (max-width: 380px) {
     .info-container {
         opacity: 0.6;
-        font-size: 12pt;
+        font-size: 8pt;
     }
 }
