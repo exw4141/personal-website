@@ -78,7 +78,7 @@
 }
 
 @media screen and (max-widh: 380px) {
-    #info-container {
+    /* #info-container {
         opacity: 0.7;
-    }
+    } */
 }
