@@ -18,9 +18,12 @@
             <div id="project-{{ loop.index0 + 1 }}" class="project">
                 <div class="image-container">
                     <img class="project-image" src="{{ url_for('static', filename=project.imagePath) }}" />
-                    <div class="description-container">
-                        <div class="project-description">
-                            {{ project.description }} <br />
+                    <div class="info-container">
+                        <div class="project-info">
+                            <p id="project-description">
+                                {{ project.description }} <br />
+                            </p>
+
                             Tools: {{ project.tools }} <br />
 
                             {% if project.github != "" %}

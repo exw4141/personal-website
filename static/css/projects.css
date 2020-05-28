@@ -23,7 +23,7 @@
     width: 100%;
 }
 
-.description-container {
+.info-container {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -36,12 +36,11 @@
     background-color: black;
 }
 
-.description-container:hover {
+.info-container:hover {
     opacity: 0.7;
 }
 
-.project-description {
-    text-align: center;
+.project-info {
     color: white;
     position: absolute;
     width: 80%;
@@ -79,7 +78,7 @@
 }
 
 @media screen and (max-widh: 380px) {
-    #description-container {
+    #info-container {
         opacity: 0.7;
     }
 }
