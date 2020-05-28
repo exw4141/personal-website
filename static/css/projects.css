@@ -76,6 +76,10 @@
         grid-template-columns: 100%;
         grid-template-rows: auto;
     }
+
+    .info-container {
+        font-size: 11pt;
+    }
 }
 
 @media screen and (max-width: 380px) {
