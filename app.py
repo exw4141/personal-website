@@ -35,6 +35,14 @@ def project():
             "link": ""
         },
         {
+            "name": "Iris Classification Project",
+            "imagePath": "images/iris-classification.png",
+            "description": "Introductory supervised learning project that classifies an iris flower between 3 species. This project allowed me to become more familiar with Jupyter Notebooks and the workflow with preparing and creating a machine learning model.",
+            "tools": "Python, pandas, scikit-learn, Jupyter",
+            "github": "https://github.com/exw4141/iris-flowers-classification",
+            "link": ""
+        },
+        {
             "name": "AR Duck Hunt",
             "imagePath": "images/duck-hunt.png",
             "description": "Project for Trends in Software Development Processes that ported 2-D Duck Hunt assets into an augmented reality environment. The main purpose of this project was to gain experience with the Agile methodology and its entailing ceremonies (daily standups, sprint retrospectives, planning poker, etc.). However, I was able to gain experience with AR development and the Unity game engine.",
